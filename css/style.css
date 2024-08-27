@@ -1,0 +1,168 @@
+body{
+    font-family: "Merriweather", serif;
+    
+}
+:root{
+    --main-color:#fdc500;
+    --main-padding:70px;
+}
+.main-color{
+    color: var(--main-color);
+}
+/*********************title*********************/
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-block: 30px;
+}
+.title p{
+    position: absolute;
+    font-size: 2.875rem;
+    font-weight: bolder;
+
+}
+.title h2{
+    font-size: 7.5rem;
+    color: #aaa;
+    letter-spacing: 25px;
+
+}
+/*********************title*********************/
+
+/*********************Navbar*********************/
+nav .active{
+    color: var(--main-color) !important;
+}
+
+/*********************Navbar*********************/
+
+
+
+/*********************Home*********************/
+
+header{
+    background-image: url('../images/home-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+header .container .caption{
+    color: #fff;
+}
+header .container .caption  a{
+    color:#fff;
+    text-decoration: none;
+}
+header .container .caption > a{
+    color:var(--main-color);
+   
+}
+header .container .caption ul li a i{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 10px;
+    margin-right:5px ;
+    transition: 1s color ease,1s background-color ease,1s border ease;
+}
+header .container .caption ul li a i:hover{
+color: var(--main-color);
+background-color: #fff;
+
+}
+/*********************Home*********************/
+/*********************about*********************/
+#about{
+    background-image: url('../images/light_dot.jpg');
+    padding-block: var(--main-padding);
+  
+}
+
+/*********************about*********************/
+/*********************services*********************/
+#services{
+    background-image: url('../images/dark_dot.jpg');
+    padding-block: var(--main-padding);
+}
+#services .service-content {
+    position: relative;
+    padding: 30px;
+    border-radius: 5px;
+}
+#services .service-content i{
+    position: absolute;
+    top:0;
+    transform: translate(-50%,-50%);
+    left:50%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+}
+#services .service-content h4{
+ position: relative;
+}
+#services .service-content h4::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s width ease;
+}
+#services .service-content:hover h4::after{
+    width: 90px;
+}
+/*********************services*********************/
+/*********************Testimonial*********************/
+#testimonial{
+    padding-block: var(--main-padding);
+   
+}
+#testimonial .carousel-item img{
+width: 100px;
+
+border-radius: 50%;
+
+transform: translateY(50%);
+
+
+}
+
+#testimonial .carousel-indicators  button img{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+#testimonial .slide{
+    width: 80%;
+    margin: auto;
+}
+#testimonial .carousel-indicators [data-bs-target]{
+    text-indent: 0;
+}
+/*********************Testimonial*********************/
+/*********************Footer*********************/
+footer{
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+}
+footer span{
+    color: black;
+}
+/*********************Footer*********************/
