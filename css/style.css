@@ -32,7 +32,7 @@ body{
 /*********************title*********************/
 
 /*********************Navbar*********************/
-nav .active{
+nav .nav-link.active{
     color: var(--main-color) !important;
 }
 
